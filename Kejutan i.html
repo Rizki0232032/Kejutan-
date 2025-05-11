@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+  <title>I Love You</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+      font-family: 'Pacifico', cursive;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      color: white;
+      user-select: none;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      text-shadow:
+        3px 3px 8px rgba(255, 0, 0, 0.6),
+        0 0 10px rgba(255, 255, 255, 0.8);
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      0% {
+        text-shadow:
+          3px 3px 8px rgba(255, 0, 0, 0.6),
+          0 0 10px rgba(255, 255, 255, 0.8);
+        color: #fff0f6;
+      }
+      100% {
+        text-shadow:
+          4px 4px 12px rgba(255, 20, 20, 0.9),
+          0 0 20px rgba(255, 200, 200, 1);
+        color: #ff385c;
+      }
+    }
+    @media (max-width: 400px), (max-height: 600px) {
+      h1 {
+        font-size: 3rem;
+        padding: 0 10px;
+        word-wrap: break-word;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>I love you</h1>
+  </div>
+</body>
+</html>
